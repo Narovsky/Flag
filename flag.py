@@ -8,15 +8,15 @@ def flag():
         print(e)
         return flag()
 
-    w = 3 * N
-    rh = int(N / 2)
-    n2 = int(1.5 * N)
+    width = 3 * N
+    radius_height = int(N / 2)
+    N2 = int(1.5 * N)
 
     lines = []
 
-    lines.append("#" * (w + 2))  # первая строка
-    lines.extend(["#" + (" " * w) + "#" for i in range(rh)])  # строки до круга
-    lines.extend(["#" + (" " * (n2 - i - 1)) + "*" + ("o" * i * 2) + "*" + (" " * (n2 - i - 1)) + "#" for i in range(rh)])  # круг
+    lines.append("#" * (width + 2))  
+    lines.extend(["#" + (" " * width) + "#" for i in range(radius_height)])  
+    lines.extend(["#" + (" " * (N2 - i - 1)) + "*" + ("o" * i * 2) + "*" + (" " * (N2 - i - 1)) + "#" for i in range(radius_height)])  
 
     print("\n".join(lines))
     lines.reverse()
