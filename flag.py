@@ -16,7 +16,8 @@ def flag():
 
     lines.append("#" * (width + 2))  
     lines.extend(["#" + (" " * width) + "#" for i in range(radius_height)])  
-    lines.extend(["#" + (" " * (N2 - i - 1)) + "*" + ("o" * i * 2) + "*" + (" " * (N2 - i - 1)) + "#" for i in range(radius_height)])  
+    lines.extend(["#" + (" " * (N2 - i - 1)) + "*" + ("o" * i * 2) + "*" + 
+                  (" " * (N2 - i - 1)) + "#" for i in range(radius_height)])  
 
     print("\n".join(lines))
     lines.reverse()
