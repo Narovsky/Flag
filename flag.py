@@ -24,4 +24,3 @@ def flag():
     return str + "\n".join(lines)
 
 
-flag()
