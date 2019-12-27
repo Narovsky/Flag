@@ -1,6 +1,6 @@
 def flag():
     try:
-        N = int(input('Введите N: '))
+        N = int(input('Enter N: '))
         if N % 2 != 0:
             print('ArgumentError')
             return flag()
